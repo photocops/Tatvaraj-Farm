@@ -1,1 +1,96 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~locomotive-scroll/dist/locomotive-scroll.css';
+.navbar_ai {
+    position: fixed;
+    width: 100%;
+    padding: 5px 1.3rem;
+    background: #00000099;
+    font-family: 'Ubuntu', 'sans-serif';
+    transition: all ease .5s;
+    z-index: 999;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.navbar_ai.sticky {
+    padding: 10px 1.3rem;
+    background: #000000cc;
+}
+
+.navbar_ai .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar_ai .logo {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.navbar_ai .logo a {
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar_ai .logo a span {
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+.navbar_ai.sticky .logo a {
+    color: white;
+}
+
+.navbar_ai.sticky .logo a span {
+    color: white;
+}
+
+.navbar_ai ul {
+    margin-bottom: 0px;
+    padding: 10px;
+}
+
+.navbar_ai .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar_ai ul li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar_ai.sticky .menu li a {
+    color: white;
+}
+
+.navbar_ai ul li a:hover {
+    text-decoration: underline;
+    color: #2fb383 !important;
+}
+
+.navbar_ai.sticky .menu li a:hover {
+    color: white;
+}
+
+.menu-btn {
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-link {
+    color: white !important;
+}
